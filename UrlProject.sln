@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlProject", "UrlProject\UrlProject.csproj", "{BFCAC8ED-C8C7-4F31-A830-4A6F593B3C8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoritifierMVC", "ShoritifierMVC\ShoritifierMVC.csproj", "{9C0D8A59-0820-4DDD-98C6-41C36087BFEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFCAC8ED-C8C7-4F31-A830-4A6F593B3C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFCAC8ED-C8C7-4F31-A830-4A6F593B3C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFCAC8ED-C8C7-4F31-A830-4A6F593B3C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFCAC8ED-C8C7-4F31-A830-4A6F593B3C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C0D8A59-0820-4DDD-98C6-41C36087BFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C0D8A59-0820-4DDD-98C6-41C36087BFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C0D8A59-0820-4DDD-98C6-41C36087BFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C0D8A59-0820-4DDD-98C6-41C36087BFEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F453BBB8-0DB3-461C-9694-15A872C5090A}
+	EndGlobalSection
+EndGlobal

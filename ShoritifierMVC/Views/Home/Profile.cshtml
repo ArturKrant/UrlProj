@@ -1,0 +1,56 @@
+﻿@model UserDto
+@{
+}
+<div>
+    <div class="container border" style="padding:20px">
+        <form method="post" asp-controller="Home" asp-action="Profile">
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+            <div class="form-group row mb-2">
+                <div class="col-2">
+                    <label asp-for="FirstName"></label>
+                </div>
+                <div class="col-4">
+                    <input type="text" asp-for="FirstName" class="form-control" value="@User.Claims.FirstOrDefault(c => c.Type == "FirstName").Value" />
+                </div>
+                <span class="text-danger" asp-validation-for="FirstName"></span>
+            </div>
+
+            <div class="form-group row mb-2">
+                <div class="col-2">
+                    <label asp-for="LastName"></label>
+                </div>
+                <div class="col-4">
+                    <input type="text" asp-for="LastName" class="form-control" value="@User.Claims.FirstOrDefault(c => c.Type == "LastName").Value" />
+                </div>
+                <span class="text-danger" asp-validation-for="LastName"></span>
+            </div>
+
+            <div class="form-group row mb-2">
+                <div class="col-2">
+                    <label asp-for="Password"></label>
+                </div>
+                <div class="col-4">
+                    <input type="password" asp-for="Password" class="form-control" />
+                </div>
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+
+            <div class="form-group row mb-2">
+                <div class="col-2">
+                    <label asp-for="VerifyPassword"></label>
+                </div>
+                <div class="col-4">
+                    <input type="password" asp-for="VerifyPassword" class="form-control" />
+                </div>
+                <span class="text-danger" asp-validation-for="VerifyPassword"></span>
+            </div>
+
+            <div class="form-group row mb-2">
+                <div class="col-2">
+                    <input type="submit" class="btn btn-primary" value="Update" />
+                </div>
+            </div>
+
+        </form>
+</div>

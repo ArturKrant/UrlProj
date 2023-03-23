@@ -1,0 +1,14 @@
+﻿
+@if(User.Identity.IsAuthenticated)
+{
+    <form method="post" class="form-inline" asp-controller="Account" asp-action="Logout">
+        Welcome @User.Claims.FirstOrDefault(c => c.Type == "FirstName").Value
+        <a class="btn btn-link" asp-controller="Home" asp-action="Profile">Profile</a>
+        <button type="submit" class="ml-2 btn btn-link">Logout</button>
+    </form>
+}
+else
+{
+    <a class="btn btn-link" asp-controller="Account" asp-action="Signup">Signup</a>
+    <a class="btn btn-link" asp-controller="Account" asp-action="Login">Login</a>
+}
